@@ -1,0 +1,337 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-color: #1f1f1f;
+    position: relative;
+    padding-bottom: 10rem;
+    padding-top: 5rem;
+    min-height: 100vh;
+}
+/* inicia navegacion */
+.contenedorNav{
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: #2a2a2a;
+    position: fixed;
+    top: 0;
+    height: 5rem;
+    width: 100%;
+}
+.contenedorLogo{
+    flex: 1 1 auto;
+}
+.tituloPag{
+    flex: 4 1 auto;
+}
+.divMenu{
+    flex: 5 1 auto;
+}
+.logo{
+    height: 5rem;
+}
+.tituloPrincipal{
+    color: #b69944;
+    line-height: 5rem;
+}
+.linksNav{
+    float: right;
+    margin-right: 0.5rem;
+}
+.divMenu li{
+    position: relative;
+    display: inline-block;
+    margin:0 0.5rem;
+    line-height: 5rem;
+}
+.divMenu a{
+    color: #fff;
+    transition: color 0.3s ease;
+    font-size: 0.9rem;
+}
+.divMenu li a:hover{
+    color: #a88ec0;
+}
+.subMenu{
+    position: absolute;
+    background-color: #2a2a2a;
+    width: 400%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.subMenu li a{
+    display: block;
+    padding: 0.9rem;
+}
+.divMenu li:hover .subMenu{
+    visibility: visible;
+    opacity: 1;
+}
+.divMenu .active{
+    color: #00ADB5;
+}
+/* menu responsive */
+.menuCelular{
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 21px;
+    border-radius: 1rem;
+}
+.menuCelular .barra{
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+}
+@media (max-width: 768px){
+    .menuCelular {
+        display: flex;
+    }
+    .menuCelular  .barra{
+        display: flex;
+        margin: 5px;
+    }
+    .contenedorLogo{
+        width: 5rem;
+    }
+    .divMenu{
+        margin-top: 5rem;
+        position: fixed;
+        width: 100%;
+        margin-left: -100%;
+        transition: all .5s;
+    }
+    .tituloPrincipal{
+        display: none;
+    }
+    .contenedorNav{
+        flex-direction: column;
+    }
+    .linksNav{
+        width: 100%;
+    }
+    .linksNav li{
+        width: 100%;
+        flex-direction: column;
+        background-color: #2a2a2a;
+        text-align: center;
+    }
+    #checkbox{
+        display: none;
+    }
+    #checkbox:checked ~ .divMenu{
+        display: block;
+        margin-left: 0;
+    }
+    /* en teoria con lo que pude buscar el checkbox
+    tiene que desplegar el menu pero no le encuentro la forma,
+     se que va adelantado 
+    pero quiero ir dandole forma  */
+}
+/* termina navegacion */
+/*inicia footer */
+.footer{
+    background-color: #2a2a2a;
+    height: auto;
+    padding: 1rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.footer .social{
+    text-align: center;
+    padding-bottom: 10px;
+}
+.footer .social a{
+    color: #fff;
+    transition: color 0.3s ease;
+    font-size: 14px;
+    margin: 5px;
+    display: inline-block;
+}
+.footer .social a:hover{
+    color: #a88ec0;
+}
+.footer ul{
+    text-align: center;
+}
+.footer ul li{
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 0 1rem;
+    text-align: center;
+}
+.footer ul li a{
+    color: #fff;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+.footer ul li a:hover{
+    color: #a88ec0;
+}
+.footer .copy{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 10px;
+    color: #b69944;
+}
+/*inicia footer */
+/* inicia slider */
+.slider{
+    width: 100%;
+    margin: 5px auto;
+    overflow: hidden;
+}
+.slider ul{
+    display: flex;
+    padding: 0;
+    width: 500%;
+    animation: slide 30s infinite;
+}
+.slider img{
+    width: 100%;
+}
+@keyframes slide{
+    0%{margin-left: 0;}
+    18%{margin-left: 0;}
+    20%{margin-left: -100%;}
+    38%{margin-left: -100%;}
+    40%{margin-left: -200%;}
+    58%{margin-left: -200%;}
+    60%{margin-left: -300%;}
+    68%{margin-left: -300%;}
+    70%{margin-right: -400%;}
+    88%{margin-left: -400%;}
+}
+/* termina slider */
+/*inicia noticias de inicio*/
+.tituloDeNoticia{
+    color: #b69944;
+    text-align: center;
+}
+.noticiaPricipal{
+    display: grid;
+    gap: 2rem;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+    transition: box-shadow 0.3s ease;
+    color: #c0c0c0;
+    margin:3rem 1rem;
+    width: 95%;
+    background-color: #2a2a2a;    
+    padding: 1.5rem 3rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+.noticiaPricipal:hover{
+    box-shadow:0 0 1px 1px #c0c0c0;
+}
+/*termina noticias de inicio*/
+/*inicia galeria de articulos novedades*/
+.galeriaDeNovedades{
+    display: flex;
+    flex: 2 1 auto;
+    flex-flow: row wrap;
+    margin: 1rem;
+}
+.galeriaDeNovedades .articulo{
+    color: #c0c0c0;
+    background-color: #2a2a2a;
+    flex:2 1 40%;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    flex: 1 1 45%;
+    margin: 1rem;
+    border-radius: 1rem;
+}
+.galeriaDeNovedades .articulo img{
+    width: 100%;
+    padding: 5px;
+}
+.galeriaDeNovedades .articulo h6{
+    color: #b69944;
+    font-size: 2rem;
+    text-align: center;
+}
+/*termina galeria de articulos novedades*/
+/*inicia contenido banda dialipa */
+.contenedorPrincipal h6{
+    color: #b69944;
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem;
+}
+.contenedorPrincipal .imagenPrimaria{
+    width: 100%;
+}
+/*termina contenido banda dialipa */
+/*inicia formulario contacto */
+.conenedorContacto{
+    background-color: #2a2a2a;
+    margin: 3rem;
+    max-width: 100rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    color: #c0c0c0;
+}
+.tituloContacto{
+    text-align: center;
+    font-size: xx-large;
+    color: #b69944;
+}
+
+.contenedorDeFormulario form p{
+    margin: 0;
+    padding: 10px
+}
+.contenedorDeFormulario form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.contenedorDeFormulario form .unaLinea{
+    grid-column: 1/3;
+}
+.contenedorDeFormulario form .unaLinea button{
+    cursor: pointer;
+}
+.formularioSubcontenedor1 form button,
+.formularioSubcontenedor1 form input,
+.formularioSubcontenedor1 form textarea{
+    width: 100%;
+    padding: 16px;
+    border: none;
+    background: none;
+    border-bottom: 1px solid #b69944;
+}
+.formularioSubcontenedor1 form button{
+    background-color: #b69944;
+    width: min-content;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: color 0,3s ease;
+}
+.formularioSubcontenedor1 form button:hover{
+    color: #fff;
+}
+.formularioSubcontenedor2{
+    background-color: #a88ec0;
+    color: #000;
+    border-radius: 15px;
+    padding: 15px;
+}
+.formularioSubcontenedor2 h4
+.formularioSubcontenedor2 ul
+.formularioSubcontenedor2 p{
+    text-align: center;
+}
+/*termina formulario contacto */
