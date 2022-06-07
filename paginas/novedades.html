@@ -8,107 +8,168 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../estilos/styles.css">
     <title>Novedades</title>
 </head>
 <body>
     <!--inicia nav-->
     <header class="contenedorNav">
-        <a class="contenedorLogo" href="../index.html">
-            <img class="logo" src="../imagenes/Jony_png.png" alt="logo">
-        </a>
-        <h1 class="tituloPrincipal">JG Design</h1>
-        <nav class="divMenu">
-            <ul class="linksNav">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a class="active" href="novedades.html">Novedades</a></li>
-                <li><a href="#">Bandas</a>
-                    <ul class="subMenu">
-                        <li><a href="submenu/dualipa.html">Dua Lipa</a></li>
-                        <li><a href="submenu/imagine.html">Imagine Dragons</a></li>
-                        <li><a href="submenu/slipknot.html">Slipknot</a></li>
-                        <li><a href="submenu/taylor.html">Taylor Swift</a></li>
-                        <li><a href="submenu/system.html">System of a Down</a></li>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+              <a class="navbar-brand" href="../index.html">
+                  <img class="logo" src="../imagenes/Jony_png.png" alt="logo">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link activo" href="novedades.html">Novedades</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Bandas
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="submenu/dualipa.html">Dua Lipa</a></li>
+                        <li><a class="dropdown-item" href="submenu/imagine.html">Imagine Dragons</a></li>
+                        <li><a class="dropdown-item" href="submenu/slipknot.html">Slipknot</a></li>
+                        <li><a class="dropdown-item" href="submenu/system.html">System of a down</a></li>
+                        <li><a class="dropdown-item" href="submenu/taylor.html">Taylor Swift</a></li>
                     </ul>
-                </li>
-                <li><a href="tickets.html">Tickets</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tickets.html">Tickets</a>
+                      </li>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
     </header>
     <!--termina nav-->
     <!--inicia novedades-->
     <section class="galeriaDeNovedades">
-        <div class="articulo">
-            <h6>
-                Levitating recibe una segunda demanda por plagio
-            </h6>
-            <img src="../imagenes/noticiaduajpg.jpg" alt="#">
-            <p>
-                Levitating, uno de los temas de mayor éxito de Dua Lipa,
-                 ha vuelto a ser objeto de una acusación oficial de plagio, 
-                 esta vez de la canción de 1979 Wiggle And Giggle All Night, 
-                 la misma que el español Miguel Bosé adaptó en 1980 para crear su famoso Don Diablo.
-            </p>
-            <button>Mas Info</button>
-        </div>
-        <div class="articulo">
-            <h6>
-                Dua Lipa deja atrás la melena XL y se atreve con el corte
-            </h6>
-            <img src="../imagenes/noticiadua2.jpg" alt="#">
-            <p>
-                Dua Lipa fue otra de las grandes defensoras de la melena XXL, 
-                como bien demostró cuando desfiló para Versace o en sus últimas apariciones públicas.
-                 Sin embargo, parece que a la cantante no le gusta seguir la corriente 
-            </p>
-            <button>Mas Info</button>
-        </div>
-        <div class="articulo">
-            <h6>
-                Taylor Swift estrenó un fragmento de su nueva canción This Love
-            </h6>
-            <img src="../imagenes/noticiataylor.jpg" alt="#">
-            <p>
-                Ya súper metida en la búsqueda de recuperar los derechos de sus canciones, 
-                en noviembre de 2021 publicó “RED”. Hoy la noticia alrededor de Taylor Swift viene de la misma campaña: 
-                como parte del avance de “The Summer I turned pretty”, una nueva ficción de Amazon Prime Video,
-                 la cantante norteamericana estrenó (parcialmente) la nueva versión de su clásico This love.
-            </p>
-            <button>Mas Info</button>
-        </div>
-        <div class="articulo">
-            <h6>
-                Taylor Swift estrena videoclip
-            </h6>
-            <img src="../imagenes/noticiataylor2.jpg" alt="#">
-            <p>
-                La cantante Taylor Swift acaba de estrenar la regrabación de su disco Red y
-                 ha decidido sacar el videoclip de I Bet Your Think About Me,
-                  una de las canciones denominadas 'From the vault' (Desde el baúl),
-                   temas que en su momento no pasaron el corte para formar parte del
-                    álbum original pero que ha rescatado para esta nueva versión.
-            </p>
-            <button>Mas Info</button>
-        </div>
-        <!-- <div class="articulo">
-
-        </div>
-        <div class="articulo">
-
-        </div>
-        <div class="articulo">
-
-        </div>
-        <div class="articulo">
-
-        </div>
-        <div class="articulo">
-
-        </div>
-        <div class="articulo">
-
-        </div> -->
+        <article class="articulo">
+            <div class="card">
+                <img src="../imagenes/noticiaduajpg.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Levitating recibe una segunda demanda por plagio</h5>
+                  <p class="card-text">Levitating, uno de los temas de mayor éxito de Dua Lipa,
+                    ha vuelto a ser objeto de una acusación oficial de plagio, 
+                    esta vez de la canción de 1979 Wiggle And Giggle All Night, 
+                    la misma que el español Miguel Bosé adaptó en 1980 para crear su famoso Don Diablo.</p>
+                  <a href="#" class="btn btn-primary">Mas Info</a>
+                </div>
+            </div>
+        </article>
+        <article class="articulo">
+            <div class="card">
+                <img src="../imagenes/noticiadua2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Dua Lipa deja atrás la melena XL y se atreve con el corte</h5>
+                  <p class="card-text"> Dua Lipa fue otra de las grandes defensoras de la melena XXL, 
+                    como bien demostró cuando desfiló para Versace o en sus últimas apariciones públicas.
+                     Sin embargo, parece que a la cantante no le gusta seguir la corriente.</p>
+                  <a href="#" class="btn btn-primary">Mas Info</a>
+                </div>
+            </div>
+        </article>
+        <article class="articulo">
+            <div class="card">
+                <img src="../imagenes/noticiataylor2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Taylor Swift estrena videoclip</h5>
+                  <p class="card-text">La cantante Taylor Swift acaba de estrenar la regrabación de su disco Red y
+                    ha decidido sacar el videoclip de I Bet Your Think About Me,
+                     una de las canciones denominadas 'From the vault' (Desde el baúl),
+                      temas que en su momento no pasaron el corte para formar parte del
+                       álbum original pero que ha rescatado para esta nueva versión.</p>
+                  <a href="#" class="btn btn-primary">Mas Info</a>
+                </div>
+            </div>
+        </article>
+        <article class="articulo">
+            <div class="card">
+                <img src="../imagenes/noticiataylor.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Taylor Swift estrenó un fragmento de su nueva canción This Love</h5>
+                  <p class="card-text">Ya súper metida en la búsqueda de recuperar los derechos de sus canciones, 
+                    en noviembre de 2021 publicó “RED”. Hoy la noticia alrededor de Taylor Swift viene de la misma campaña: 
+                    como parte del avance de “The Summer I turned pretty”, una nueva ficción de Amazon Prime Video,
+                     la cantante norteamericana estrenó (parcialmente) la nueva versión de su clásico This love.</p>
+                  <a href="#" class="btn btn-primary">Mas Info</a>
+                </div>
+            </div>
+        </article>
+        <article class="articulo">
+            <div class="card">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+        </article>
+        <article class="articulo">
+            <div class="card">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+        </article>
+        <article class="articulo">
+            <div class="card">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+        </article>
+        <article class="articulo">
+            <div class="card">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+        </article>
+        <article class="articulo">
+            <div class="card">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+        </article>
+        <article class="articulo">
+            <div class="card">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+        </article>
     </section>
     <!--temina novedades-->
     <!--inicia footer-->
@@ -139,5 +200,7 @@
         </p>
     </footer>
     <!--termina footer-->
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

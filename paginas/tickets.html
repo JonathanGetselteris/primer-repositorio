@@ -8,33 +8,51 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../estilos/styles.css">
     <title>Tickets</title>
 </head>
 <body>
     <!--inicia nav-->
     <header class="contenedorNav">
-        <a class="contenedorLogo" href="../index.html">
-            <img class="logo" src="../imagenes/Jony_png.png" alt="logo">
-        </a>
-        <h1 class="tituloPrincipal">JG Design</h1>
-        <nav class="divMenu">
-            <ul class="linksNav">
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="novedades.html">Novedades</a></li>
-                <li><a href="#">Bandas</a>
-                    <ul class="subMenu">
-                        <li><a href="submenu/dualipa.html">Dua Lipa</a></li>
-                        <li><a href="submenu/imagine.html">Imagine Dragons</a></li>
-                        <li><a href="submenu/slipknot.html">Slipknot</a></li>
-                        <li><a href="submenu/taylor.html">Taylor Swift</a></li>
-                        <li><a href="submenu/system.html">System of a Down</a></li>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+              <a class="navbar-brand" href="../index.html">
+                  <img class="logo" src="../imagenes/Jony_png.png" alt="logo">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="novedades.html">Novedades</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Bandas
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="submenu/dualipa.html">Dua Lipa</a></li>
+                        <li><a class="dropdown-item" href="submenu/imagine.html">Imagine Dragons</a></li>
+                        <li><a class="dropdown-item" href="submenu/slipknot.html">Slipknot</a></li>
+                        <li><a class="dropdown-item" href="submenu/system.html">System of a down</a></li>
+                        <li><a class="dropdown-item" href="submenu/taylor.html">Taylor Swift</a></li>
                     </ul>
-                </li>
-                <li><a class="active" href="tickets.html">Tickets</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+                    <li class="nav-item">
+                        <a class="nav-link activo" href="tickets.html">Tickets</a>
+                      </li>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
     <!--termina nav-->
     <!-- inicia tickets -->
@@ -68,5 +86,7 @@
         </p>
     </footer>
     <!-- termina footer -->
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
